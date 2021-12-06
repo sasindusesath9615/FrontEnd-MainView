@@ -1,0 +1,115 @@
+.logo {
+  width: 110px;
+  height: auto;
+}
+li {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 10px 15px 5px 15px;
+}
+.login-button {
+  background-color: #ffffff;
+  border-color: #f4633b;
+  color: #f4633b;
+  width: 120px;
+  height: 40px;
+}
+.login-button:hover {
+  background-color: #f4633b;
+}
+.signup-button {
+  background-color: #f4633b;
+  border-color: #f4633b;
+  color: "black";
+  width: 120px;
+  height: 40px;
+}
+.signup-button:hover {
+  border-color: #f4633b;
+  background-color: #f4633b;
+  color: black;
+}
+
+@media (max-width: 1250px) {
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  li {
+    font-size: 18px;
+    padding: 3px 5px 5px 5px;
+  }
+  .login-button {
+    font-size: 18px;
+    width: 100px;
+  }
+  .signup-button {
+    width: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    width: 90px;
+    height: auto;
+  }
+  li {
+    font-size: 18px;
+    padding: 3px 5px 5px 5px;
+  }
+  .login-button {
+    font-size: 18px;
+    width: 90px;
+  }
+  .signup-button {
+    width: 90px;
+  }
+}
+@media (max-width: 767.98px) {
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  li {
+    font-size: 18px;
+    padding: 2px 5px 5px 5px;
+  }
+  .login-button {
+    font-size: 18px;
+    width: 90px;
+  }
+  .signup-button {
+    width: 90px;
+  
+  }
+
+  .notification{
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* amount button */
+  /* .notification{
+    background-color: #f4633b;
+    color:#f4633b;
+    font-size: 8px;
+
+  } */
+  /* .amount-container {
+    position: absolute;
+    top: -0.85rem;
+    right: -0.85rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: #f4633b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .total-amount {
+    color:#f4633b;
+    margin-bottom: 0;
+    font-size: 1rem;
+  } */
+  /* amount button */
+}
