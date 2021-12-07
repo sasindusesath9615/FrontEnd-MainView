@@ -11,8 +11,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,address2,address2",
     img: "./images/Food/Pizza.jpg",
-    img1: "./images/DummeyImages/thumb1.png",
-    img2: "./images/DummeyImages/thumb2.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Restaurant.jpg",
     restaurantName: "Easy Foods",
   },
@@ -28,6 +30,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,address2,address2,address2",
     img: "./images/Rice1.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (5).jpg",
     restaurantName: "Kam Kum",
   },
@@ -43,6 +49,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,address2,address2,address2",
     img: "./images/Food/cake.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (2).jpg",
     restaurantName: "Kam Kum",
   },
@@ -58,6 +68,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,address2,address2,address2",
     img: "./images/Food/Nuudle2.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (3).jpg",
     restaurantName: "Bon Bon",
   },
@@ -73,6 +87,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,address2,address2,address2",
     img: "./images/Food/Coffie.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (6).jpg",
     restaurantName: "Kam Kum",
   },
@@ -88,6 +106,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,address2,address2,address2",
     img: "./images/Food/Nuudle2.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (2).jpg",
     restaurantName: "Bon Bon",
   },
@@ -104,6 +126,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/Food1.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (7).jpg",
     restaurantName: "Kuruppu Stores",
   },
@@ -119,8 +145,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/grocery/Cream-cracker.jpg",
-    img1: "./images/grocery/Cream-cracker.jpg",
-    img2: "./images/grocery/Cream-cracker.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (2).jpg",
     restaurantName: "Saman Stores",
   },
@@ -136,6 +164,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/grocery/oreo.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (3).jpg",
     restaurantName: "Kuruppu Stores",
   },
@@ -151,6 +183,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/grocery/Peanut-butter.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (4).jpg",
     restaurantName: "Saman Stores",
   },
@@ -166,6 +202,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/grocery/cocacola.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (8).jpg",
     restaurantName: "Saman Stores",
   },
@@ -181,6 +221,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/grocery/egg.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (8).jpg",
     restaurantName: "Saman Stores",
   },
@@ -196,6 +240,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/grocery/Saman.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (7).jpg",
     restaurantName: "KK Stores",
   },
@@ -212,8 +260,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/Healthcare/masks.jpg",
-    img1: "./images/Healthcare/masks.jpg",
-    img2: "./images/Healthcare/masks.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (6).jpg",
     restaurantName: "Sanduni Farmacy",
   },
@@ -229,6 +279,10 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/Healthcare/sanitizer.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (5).jpg",
     restaurantName: "Renuka Farmacy",
   },
@@ -244,12 +298,16 @@ export const dataProducts = [
     location: "matara",
     address: "Address,addressl,address1,address1",
     img: "./images/Healthcare/Dettol.jpeg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Shop Logos/shop-logo (7).jpg",
     restaurantName: "Sanduni Farmacy",
   },
 ];
 
-export const productInDetails  = [
+export const productInDetails = [
   {
     id: 1,
     name: "Pizza",
@@ -262,9 +320,11 @@ export const productInDetails  = [
     location: "matara",
     address: "Address,address2,address2",
     img: "./images/Food/Pizza.jpg",
-    img1: "./images/Food/Pizza.jpg",
-    img2: "./images/Food/Pizza.jpg",
+    thumb: {
+      img1: "./images/DummeyImages/thumb1.png",
+      img2: "./images/DummeyImages/thumb2.jpg",
+    },
     shopImg: "./images/Restaurant.jpg",
     restaurantName: "Easy Foods",
-  }
-]
+  },
+];

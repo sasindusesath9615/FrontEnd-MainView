@@ -241,6 +241,6 @@ Body {
 
 .control-product-img:hover {
   cursor: pointer;
-  border: 0.001px solid whitesmoke;
+  border: 0.001px solid lightsalmon;
   /* transition: 0.25s; */
 }

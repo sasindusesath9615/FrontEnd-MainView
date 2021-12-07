@@ -78,11 +78,6 @@ const AppProvider = ({ children }) => {
     product.total = product.count * product.price;
     //=====
     setCart(tempCart);
-    // this.setState(() => {
-    //   return {
-    //     cart: [...tempCart]
-    //   };
-    // }, this.addTotals);
   };
 
   // =============================DECREMENT ========================
@@ -104,9 +99,6 @@ const AppProvider = ({ children }) => {
       product.total = product.count * product.price;
       //=====
       setCart(tempCart);
-      // this.setState(() => {
-      //   return { cart: [...tempCart] };
-      // }, this.addTotals);
     }
   };
 
@@ -128,12 +120,6 @@ const AppProvider = ({ children }) => {
     //=====
     setCart(tempCart);
     setProducts(tempProducts);
-    // this.setState(() => {
-    //   return {
-    //     cart: [...tempCart],
-    //     products: [...tempProducts]
-    //   };
-    // }, this.addTotals);
   };
 
   // =========================CLEAR CART=====================
@@ -185,7 +171,7 @@ const AppProvider = ({ children }) => {
       setDeliverer([]);
     }
     // setLoading(false);
-  }, []);
+  }, [deliverer]);
 
   useEffect(() => {
     fetchDelivererData();

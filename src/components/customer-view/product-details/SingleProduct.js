@@ -14,13 +14,32 @@ function Description() {
 
     if (img === "img") {
       ProductImg.src = SmallImg[2].src;
-    } else if (img === "img1") {
+    } else if (img === "thumb.img1") {
       ProductImg.src = SmallImg[0].src;
     } else {
       ProductImg.src = SmallImg[1].src;
     }
   };
   // ===============CONTROL THUMBNAILS===============
+
+  // if customer press + button without adding to cart ,
+  // this will automatically add to cart 
+  const Increment = () => {
+    if (detailProduct.count === 0) {
+      addToCart(detailProduct.id);
+    } else {
+      increment(detailProduct.id);
+    }
+  };
+  // if customer press - button when amount 0,
+  // this will set it to 0 again
+  const Decrement = () => {
+    if (detailProduct.count === 0) {
+      detailProduct.count = 0;
+    } else {
+      decrement(detailProduct.id);
+    }
+  };
 
   return (
     <>
@@ -45,10 +64,10 @@ function Description() {
                 <img
                   className=" shadow rounded small-img"
                   id="SmallImg"
-                  src={detailProduct.img1}
+                  src={detailProduct.thumb.img1}
                   alt=""
                   style={{ width: "100%" }}
-                  onClick={() => changeImg("img1")}
+                  onClick={() => changeImg("thumb.img1")}
                 />
               </div>
               {/*================== Thumb2 ==================*/}
@@ -56,10 +75,10 @@ function Description() {
                 <img
                   className="shadow rounded small-img"
                   id="SmallImg"
-                  src={detailProduct.img2}
+                  src={detailProduct.thumb.img2}
                   alt=""
                   style={{ width: "100%" }}
-                  onClick={() => changeImg("img2")}
+                  onClick={() => changeImg("thumb.img2")}
                 />
               </div>
               {/*================== Thumb3 ==================*/}
@@ -131,7 +150,8 @@ function Description() {
                       type="button"
                       className="btn border border-secondary"
                       style={{ width: "37px" }}
-                      onClick={() => increment(detailProduct.id)}
+                      // onClick={() => increment(detailProduct.id)}
+                      onClick={() => Increment(detailProduct.id)}
                     >
                       +
                     </button>
@@ -146,7 +166,8 @@ function Description() {
                       type="button"
                       className="btn border border-secondary"
                       style={{ width: "37px" }}
-                      onClick={() => decrement(detailProduct.id)}
+                      // onClick={() => decrement(detailProduct.id)}
+                      onClick={() => Decrement(detailProduct.id)}
                     >
                       -
                     </button>
