@@ -8,6 +8,7 @@ function Description() {
   console.log(detailProduct);
 
   // ===============CONTROL THUMBNAILS===============
+
   const changeImg = (img) => {
     let ProductImg = document.getElementById("ProductImg");
     let SmallImg = document.getElementsByClassName("small-img");
@@ -20,10 +21,11 @@ function Description() {
       ProductImg.src = SmallImg[1].src;
     }
   };
+
   // ===============CONTROL THUMBNAILS===============
 
   // if customer press + button without adding to cart ,
-  // this will automatically add to cart 
+  // this will automatically add to cart
   const Increment = () => {
     if (detailProduct.count === 0) {
       addToCart(detailProduct.id);

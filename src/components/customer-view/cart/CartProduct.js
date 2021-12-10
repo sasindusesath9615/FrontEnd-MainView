@@ -83,7 +83,7 @@ function Product({ id, name, price, address, img,count }) {
         </div>
         {/* Delete icon */}
       </div>
-      <hr />
+      {/* <hr /> */}
     </>
   );
 }

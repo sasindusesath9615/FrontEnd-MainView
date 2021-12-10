@@ -1,9 +1,8 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-
   const [category] = useState({
     foodLink: "food",
     groceryLink: "grocery",
@@ -68,26 +67,19 @@ function Navbar() {
                   style={{ borderRadius: "3%" }}
                 >
                   <li>
-                    <Link
-                      className="dropdown-item"
-                      // to={`/CustomerSignIn/${category.foodLink}`}
-                      to="/CustomerSignIn"
-                    >
+                    <Link className="dropdown-item" to="/CustomerSignInFood">
                       Food
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="dropdown-item"
-                      to={`/CustomerSignIn/${category.groceryLink}`}
-                    >
+                    <Link className="dropdown-item" to="/CustomerSignInGrocery">
                       Grocery
                     </Link>
                   </li>
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={`/CustomerSignIn/${category.healthcareLink}`}
+                      to="/CustomerSignInHealthcare"
                     >
                       Healthcare
                     </Link>

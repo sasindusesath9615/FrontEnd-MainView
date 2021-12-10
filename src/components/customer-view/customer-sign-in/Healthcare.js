@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../navbar";
-import ProductContainer from "./ProductContainer";
 import Searchbar from "../searchbar";
+// import reactDom from "react-dom";
+import Product from "../Product";
 import { useGlobalContext } from "../../../context";
 
 function Main() {
-  const { cart } = useGlobalContext();
+  // const { category } = useParams();
+  const { cart, products } = useGlobalContext();
 
+  // ===============Get Total====================================
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -14,6 +18,7 @@ function Main() {
       cart.reduce((acc, curr) => acc + Number(curr.price) * curr.count, 0)
     );
   }, [cart]);
+  // ===============Get Total====================================
   return (
     <>
       <div>
@@ -27,10 +32,7 @@ function Main() {
           <div className="d-grid gap-3 col-3 mx-auto">
             <div className="text-center">
               <h4>
-                <i className="fas fa-hamburger icon-color-food"></i> Food
-                {/* <i className="fas fa-balance-scale icon-color-grocery"></i>
-              Grocery
-              <i className="fas fa-medkit icon-color-health"></i> Healthcare */}
+                <i className="fas fa-medkit icon-color-health"></i> Healthcare
               </h4>
             </div>
           </div>
@@ -45,7 +47,28 @@ function Main() {
         </div>
       </div>
       <div className="container container-margin">
-        <ProductContainer />
+        <div>
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            {products
+              .filter((item) => item.category === "healthcare")
+              .map((item) => {
+                return (
+                  <div className="col" key={item.id}>
+                    <Product {...item}></Product>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+        <div className="container">
+          <div className=" col-1 mx-auto">
+            <Link to="/cart">
+              <button className="btn btn-secondary btn-lg" type="button">
+                Checkout
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

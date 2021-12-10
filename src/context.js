@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useState, useContext, useEffect } from "react";
 import { useCallback } from "react";
 // Import product instesd of api
@@ -123,18 +124,10 @@ const AppProvider = ({ children }) => {
   };
 
   // =========================CLEAR CART=====================
-  // =====================
-  // clearCart = () => {
-  //   this.setState(
-  //     () => {
-  //       return { cart: [] };
-  //     },
-  //     () => {
-  //       this.setProducts();
-  //       this.addTotals();
-  //     }
-  //   );
-  // };
+  const clearCart = () => {
+    setCart([]);
+  };
+
   // ===============================================================
 
   // =====================FOOD PAGE DATA FETCH======================
@@ -193,6 +186,7 @@ const AppProvider = ({ children }) => {
         increment,
         decrement,
         removeItem,
+        clearCart,
       }}
     >
       {children}

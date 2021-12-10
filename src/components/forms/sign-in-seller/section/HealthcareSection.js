@@ -23,6 +23,9 @@ function FoodSection() {
       </div>
       {/* business registration number */}
 
+      {/* Image Inputs */}
+      <ImageUpload />
+      
       {/* Agreement */}
       <Agreement />
     </>

@@ -5,23 +5,13 @@ import { useGlobalContext } from "../../context";
 // import "font-awesome/css/font-awesome.min.css";
 
 function Navbar() {
-  const { cart} = useGlobalContext();
-
+  const { cart } = useGlobalContext();
+  console.log(cart);
   const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
     setCartCount(cart.reduce((acc, curr) => acc + Number(curr.count), 0));
   }, [cart]);
-
-  const [category, setCategory] = useState({
-    foodLink: "food",
-    groceryLink: "grocery",
-    healthcareLink: "healthcare",
-  });
-
-  // const food = 'food';
-  // useEffect(() => {
-  // }, [])
 
   return (
     <>
@@ -83,26 +73,19 @@ function Navbar() {
                 >
                   <li>
                     {/* <Link className="dropdown-item" to={`/CustomerSignInFood/${category.foodLink}`}> */}
-                    <Link
-                      className="dropdown-item"
-                      // to={`/CustomerSignIn/${category.foodLink}`}
-                      to="/CustomerSignIn"
-                    >
+                    <Link className="dropdown-item" to="/CustomerSignInFood">
                       Food
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="dropdown-item"
-                      to={`/CustomerSignIn/${category.groceryLink}`}
-                    >
+                    <Link className="dropdown-item" to="/CustomerSignInGrocery">
                       Grocery
                     </Link>
                   </li>
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={`/CustomerSignIn/${category.healthcareLink}`}
+                      to="/CustomerSignInHealthcare"
                     >
                       Healthcare
                     </Link>
@@ -159,7 +142,6 @@ function Navbar() {
       </nav>
     </>
   );
-  console.log(cart);
 }
 
 export default Navbar;

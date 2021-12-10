@@ -10,14 +10,16 @@ import Homebody from "./components/home-page/Mainhome/Mhbody";
 import Navbar from "./components/home-page/Navbar/navbar";
 import Error from "./components/home-page/Error";
 // customer-view
-import CustomerSignIn from "./components/customer-view/customer-sign-in/Main";
+import CustomerSignInFood from "./components/customer-view/customer-sign-in/Food";
+import CustomerSignInGrocery from "./components/customer-view/customer-sign-in/Grocery";
+import CustomerSignInHealthcare from "./components/customer-view/customer-sign-in/Healthcare";
 import CustomerSignInMain from "./components/customer-view/customer-sign-in-main/Main";
 import ProductDetails from "./components/customer-view/product-details/Main";
 import Cart from "./components/customer-view/cart/Main";
 import CheckoutOnline from "./components/customer-view/checkout(Online)/Main";
 // forms
-import SignIn from "./components/forms/form-sign-in/Main";
-import LogIn from "./components/forms/login-common/Main";
+import LogIn from "./components/forms/LogIn";
+import SignIn from "./components/forms/sign-in-customer/Main";
 import SignInDeliverer from "./components/forms/sign-in-deliverer/Main";
 import SignInSeller from "./components/forms/sign-in-seller/Main";
 
@@ -31,11 +33,14 @@ function App() {
             <Homebody />
           </Route>
 
-          {/* <Route exact path="/CustomerSignIn/:category">
-            <CustomerSignIn />
-          </Route> */}
-          <Route exact path="/CustomerSignIn">
-            <CustomerSignIn />
+          <Route exact path="/CustomerSignInFood">
+            <CustomerSignInFood />
+          </Route>
+          <Route exact path="/CustomerSignInGrocery">
+            <CustomerSignInGrocery />
+          </Route>
+          <Route exact path="/CustomerSignInHealthcare">
+            <CustomerSignInHealthcare />
           </Route>
           <Route exact path="/CustomerSignInMain">
             <CustomerSignInMain />
