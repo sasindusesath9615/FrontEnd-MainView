@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "./LogoName";
+import LogoName from "./LogoName";
+import styled from "styled-components";
 
 function Main() {
   const [user, setUser] = useState([]);
@@ -29,24 +30,30 @@ function Main() {
   const handleChange = (e) => {
     setInputUser({ ...inputUser, [e.target.name]: e.target.value });
   };
+
+  // ===================================================================
   return (
     <>
       <div className="container ">
-        <Navbar />
+        <LogoName />
       </div>
-      <div className="container container-margin">
-        <div className="container text-center py-2 welcome-text">
+      <StyledContainer className="container">
+        <StyledWelcomeText className="container text-center py-2">
           <p>welcome to Quik! Please Log In.</p>
-        </div>
+        </StyledWelcomeText>
 
-        <form className="container" onSubmit={handleSubmit}>
+        <form
+          className="container needs-validation"
+          onSubmit={handleSubmit}
+          novalidate
+        >
           {/* ==================== Email ==================== */}
           <div className="mb-3 row align-items-center py-2">
             <label htmlFor="InputEmail" className="col-sm-2 col-form-label ">
               Email
             </label>
             <div className="col-sm-10">
-              <input
+              <StyledInput
                 type="email"
                 className="form-control"
                 //   id="exampleInputEmail1"
@@ -56,7 +63,8 @@ function Main() {
                 name="Email"
                 value={inputUser.Email}
                 onChange={handleChange}
-              ></input>
+              ></StyledInput>
+              {/* <div class="valid-tooltip">Looks good!</div> */}
             </div>
           </div>
           {/* ==================== Email ==================== */}
@@ -67,30 +75,61 @@ function Main() {
               Password
             </label>
             <div className="col-sm-10">
-              <input
+              <StyledInput
                 type="password"
                 className="form-control"
                 id="inputPassword"
                 placeholder="Minimum 8 charactors with a number and a letter(required) "
-              ></input>
+              ></StyledInput>
+              {/* <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-tooltip">Please enter someething!</div> */}
             </div>
           </div>
           {/*==================== Password ====================*/}
 
           <div>
             <div className="d-grid gap-2 col-6 mx-auto mt-4">
-              <button className="btn btn-danger" type="submit">
+              <StyledButton className="btn btn-danger" type="submit">
                 Sign up
-              </button>
-              <button className="btn btn-outline-danger" type="button">
+              </StyledButton>
+              <StyledButton1 className="btn btn-outline-danger" type="button">
                 New Member? <b>Register</b> here.
-              </button>
+              </StyledButton1>
             </div>
           </div>
         </form>
-      </div>
+      </StyledContainer>
     </>
   );
 }
-
 export default Main;
+
+// ======================Styled Components============================
+const StyledContainer = styled.div`
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
+
+const StyledWelcomeText = styled.div`
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
+const StyledButton = styled.button`
+  background-color: #f4633b;
+  &:hover {
+    background-color: #f4633b;
+  }
+`;
+const StyledButton1 = styled.button`
+  background-color: white;
+  color: #f4633b;
+  &:hover {
+    background-color: #f4633b;
+  }
+`;
+
+const StyledInput = styled.input`
+  border-color: #f4633b;
+`;

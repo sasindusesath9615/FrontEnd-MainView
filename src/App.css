@@ -19,21 +19,23 @@ Body {
   background-color: #f8b742;
 }
 
-.welcome-text {
+/* .welcome-text {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
-}
+} */
+/* used */
 .container-margin {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+/* used */
 .btn-margin {
   margin-left: 10px;
   margin-right: 10px;
 }
 
+/* used */
 .image-size {
   object-fit: cover;
   max-height: 200px;
@@ -42,7 +44,7 @@ Body {
   /* border-radius: 0.25rem; */
 }
 
-.image-size-restaurant {
+/* .image-size-restaurant {
   object-fit: cover;
   height: auto;
   max-height: 60px;
@@ -53,7 +55,7 @@ Body {
   display: block;
   border-radius: 100%;
   border-color: white;
-}
+} */
 
 .image-size-product {
   object-fit: cover;
@@ -78,13 +80,13 @@ Body {
   display: inline-flex;
 }
 
-.icon-color-like {
+/* .icon-color-like {
   color: #ff4308;
 }
 
 .icon-color-location {
   color: #fece00;
-}
+} */
 
 .align-items {
   align-items: center;
@@ -128,19 +130,19 @@ Body {
   margin: 0;
 }
 
-.add-to-cart-btn {
+/* .add-to-cart-btn {
   margin-top: 155px;
   color: black;
   background-color: #fdca6e;
   width: 120px;
-}
+} */
 
-.in-cart-btn {
+/* .in-cart-btn {
   margin-top: 155px;
   color: black;
   background-color: #f4633b;
   width: 120px;
-}
+} */
 
 .rounded-btn {
   color: black;
@@ -152,9 +154,10 @@ Body {
   color: black;
   background-color: #f4633b;
   width: 120px;
+  
 }
 
-.form-control-feedback {
+/* .form-control-feedback {
   position: absolute;
   z-index: 2;
   display: block;
@@ -166,18 +169,18 @@ Body {
   color: #aaa;
   margin-top: 0.7rem;
   margin-left: 0.8rem;
-}
+} */
 
-.search-margin {
+/* .search-margin {
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 35px;
-}
+} */
 
-.search-margin-btn {
+/* .search-margin-btn {
   margin-top: 10px;
   margin-bottom: 10px;
-}
+} */
 
 .padding-right-remove {
   padding-right: 0;
@@ -187,9 +190,9 @@ Body {
   padding-left: 0;
 }
 
-.padding-remove {
+/* .padding-remove {
   padding: 0;
-}
+} */
 
 .desc {
   border-radius: 2%;
@@ -203,14 +206,14 @@ Body {
   background-color: white;
 }
 
-.price-dev-width {
+/* .price-dev-width {
   width: 100px;
   text-align: end;
-}
+} */
 
-.icon-color-food {
+/* .icon-color-food {
   color: #ff4308;
-}
+} */
 
 .icon-color-grocery {
   color: #5caf2c;
@@ -234,13 +237,13 @@ Body {
   border-color: gray;
 }
 
-.control-product-img {
+/* .control-product-img {
   cursor: pointer;
   border: 2.5px solid whitesmoke;
-}
+} */
 
-.control-product-img:hover {
+/* .control-product-img:hover {
   cursor: pointer;
   border: 0.001px solid lightsalmon;
-  /* transition: 0.25s; */
-}
+  
+} */

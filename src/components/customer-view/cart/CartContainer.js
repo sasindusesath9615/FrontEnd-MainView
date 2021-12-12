@@ -118,10 +118,7 @@ function Container() {
               <div className="col-1 col-xl-1 col-lg-1 col-md-1 col-sm-3 col-2 text-center">
                 {/* Remove All Item from Cart(clear cart) */}
                 <h5 className="text-center">
-                  <button
-                    className="btn btn-light"
-                     onClick={() => clearCart()}
-                  >
+                  <button className="btn btn-light" onClick={() => clearCart()}>
                     <i className="bi bi-trash" style={{ color: "red" }}></i>
                   </button>
                 </h5>

@@ -5,6 +5,7 @@ import Searchbar from "../searchbar";
 // import reactDom from "react-dom";
 import Product from "../Product";
 import { useGlobalContext } from "../../../context";
+import styled from "styled-components";
 
 function Main() {
   // const { category } = useParams();
@@ -32,24 +33,21 @@ function Main() {
           <div className="d-grid gap-3 col-3 mx-auto">
             <div className="text-center">
               <h4>
-                <i className="fas fa-hamburger icon-color-food"></i> Food
-                {/* <i className="fas fa-balance-scale icon-color-grocery"></i>
-              Grocery
-              <i className="fas fa-medkit icon-color-health"></i> Healthcare */}
+                <StyledIcon className="fas fa-hamburger"></StyledIcon> Food
               </h4>
             </div>
           </div>
         </div>
       </div>
       <div className="container ">
-        <div className="d-flex flex-row-reverse  mb-3 ">
-          <div className="p-2 price-dev-width">
+        <div className="d-flex flex-row-reverse mb-3 ">
+          <StyledTotal className="p-2">
             <strong>Rs.{total}</strong>
-          </div>
-          <div className="p-2 price-dev-width">Total : </div>
+          </StyledTotal>
+          <StyledTotal className="p-2">Total : </StyledTotal>
         </div>
       </div>
-      <div className="container container-margin">
+      <StyledContainer className="container">
         <div>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {products
@@ -72,9 +70,22 @@ function Main() {
             </Link>
           </div>
         </div>
-      </div>
+      </StyledContainer>
     </>
   );
 }
 
 export default Main;
+// ======================Styled Components============================
+const StyledIcon = styled.i`
+  color: #ff4308;
+`;
+const StyledTotal = styled.div`
+  width: 100px;
+  text-align: end;
+`;
+
+const StyledContainer = styled.div`
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
